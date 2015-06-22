@@ -370,7 +370,7 @@ def calculateDistances():
 			sumDistLeft = sumDistance(origXleft1, origYleft1, origZleft1, origXleft2, origYleft2, origZleft2)	
 			sumDist = sumDistance(X1, Y1, Z1, X2, Y2, Z2)
 
-                        if sign1.upper in rhymes and sign2.upper() in rhymes[sign1.upper()]:
+                        if sign1.upper() in rhymes and sign2.upper() in rhymes[sign1.upper()]:
                                 f.write(sign1 + "," + str(sign1Frames) + "," + sign2 + "," + str(sign2Frames) + "," + str(sumDistRight) + "," + str(sumDistLeft) + "," + str(sumDist) + "," + str(sumDistRight + sumDistLeft + sumDist) + "\n")
                         else:
                                 nf.write(sign1 + "," + str(sign1Frames) + "," + sign2 + "," + str(sign2Frames) + "," + str(sumDistRight) + "," + str(sumDistLeft) + "," + str(sumDist) + "," + str(sumDistRight + sumDistLeft + sumDist) + "\n")
